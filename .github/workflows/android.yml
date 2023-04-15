@@ -41,7 +41,7 @@ jobs:
                cd /usr/local/lib/android/sdk/build-tools/30.0.2/llvm-rs-cc
                ls -l
                chmod +x .github/scripts/gradlew_recursive.sh
-              .github/scripts/gradlew_recursive.sh assembleDebug
+               .github/scripts/gradlew_recursive.sh assembleDebug
               
       - name: Zip artifacts
         run: zip -r assemble.zip . -i '**/build/*.apk' '**/build/*.aab' '**/build/*.aar' '**/build/*.so'
