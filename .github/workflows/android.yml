@@ -37,8 +37,12 @@ jobs:
           java-version: '11'
       - name: Build project
         run:  |
-              chmod +x .github/scripts/gradlew_recursive.sh
+               echo /usr/local/lib/android/sdk/build-tools/30.0.2/llvm-rs-cc
+               cd /usr/local/lib/android/sdk/build-tools/30.0.2/llvm-rs-cc
+               ls -l
+               chmod +x .github/scripts/gradlew_recursive.sh
               .github/scripts/gradlew_recursive.sh assembleDebug
+              
       - name: Zip artifacts
         run: zip -r assemble.zip . -i '**/build/*.apk' '**/build/*.aab' '**/build/*.aar' '**/build/*.so'
       - name: Upload artifacts
