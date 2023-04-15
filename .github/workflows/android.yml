@@ -38,7 +38,7 @@ jobs:
       - name: Build project
         run:  |
                pwd
-               ls -1 /usr/lib/llvm-rs-cc*
+               ls -1 /usr/lib
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
                # cd /usr/local/lib/android/sdk/build-tools/30.0.2
                pwd 
