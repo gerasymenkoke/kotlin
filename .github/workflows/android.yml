@@ -37,15 +37,15 @@ jobs:
           java-version: '11'
       - name: Build project
         run:  |
-               pwd
+               
                sudo apt-get install libncursesw5
-               ls -l
                echo whereis libncursesw5
                whereis libncursesw5
-               # echo /usr/local/lib/android/sdk/build-tools/30.0.2
-               # cd /usr/local/lib/android/sdk/build-tools/30.0.2
                pwd 
                ls -l
+               # echo /usr/local/lib/android/sdk/build-tools/30.0.2
+               # cd /usr/local/lib/android/sdk/build-tools/30.0.2
+               
                chmod +x /home/runner/work/kotlin/kotlin/.github/scripts/gradlew_recursive.sh
                cd /home/runner/work/kotlin/kotlin/
                .github/scripts/gradlew_recursive.sh assembleDebug
