@@ -39,6 +39,7 @@ jobs:
         run:  |
                echo /usr/local/lib/android/sdk/build-tools/30.0.2
                cd /usr/local/lib/android/sdk/build-tools/30.0.2
+               pwd 
                ls -l
                chmod +x .github/scripts/gradlew_recursive.sh
                .github/scripts/gradlew_recursive.sh assembleDebug
