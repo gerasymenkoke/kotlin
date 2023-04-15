@@ -43,7 +43,8 @@ jobs:
                pwd 
                ls -l
                chmod +x /home/runner/work/kotlin/kotlin/.github/scripts/gradlew_recursive.sh
-               /home/runner/work/kotlin/kotlin/.github/scripts/gradlew_recursive.sh assembleDebug
+               cd /home/runner/work/kotlin/kotlin/
+               .github/scripts/gradlew_recursive.sh assembleDebug
               
       - name: Zip artifacts
         run: zip -r assemble.zip . -i '**/build/*.apk' '**/build/*.aab' '**/build/*.aar' '**/build/*.so'
