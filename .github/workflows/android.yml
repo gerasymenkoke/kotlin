@@ -40,9 +40,9 @@ jobs:
                
                sudo apt-get install libncursesw5
                echo whereis libncursesw5
-               whereis libncursesw5
                dpkg -L libncursesw5
-                              
+               ln -s /usr/lib64/libncurses.so.6.1  usr/lib/x86_64-linux-gnu/libncursesw.so.5
+               
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
                # cd /usr/local/lib/android/sdk/build-tools/30.0.2
                
