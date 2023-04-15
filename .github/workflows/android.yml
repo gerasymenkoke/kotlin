@@ -37,12 +37,13 @@ jobs:
           java-version: '11'
       - name: Build project
         run:  |
-               pwd 
-               ls -l
+               
                sudo apt-get install libncursesw5
                echo whereis libncursesw5
                whereis libncursesw5
-               # cd /home/runner/work/kotlin/kotlin/
+               cd /home/runner/work/kotlin/kotlin/libncursesw5
+               pwd
+               ls -l
                
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
                # cd /usr/local/lib/android/sdk/build-tools/30.0.2
