@@ -38,7 +38,7 @@ jobs:
       - name: Build project
         run:  |
                #cd /usr/local/lib/android/sdk/build-tools/30.0.2
-               sudo apt-get install libncurses5
+               sudo apt-get install libncursesw5
                echo dpkg -L libncurses5
                dpkg -L libncursesw5
                
