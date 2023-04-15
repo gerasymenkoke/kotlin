@@ -40,7 +40,7 @@ jobs:
                #cd /usr/local/lib/android/sdk/build-tools/30.0.2
                sudo apt-get install libncurses5
                echo dpkg -L libncurses5
-               dpkg -L libncursesw5
+               dpkg -L libncurses5
                
                
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
