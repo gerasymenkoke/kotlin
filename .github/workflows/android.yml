@@ -39,8 +39,8 @@ jobs:
         run:  |
                pwd
                sudo apt-get install libncursesw5
-               cd /usr/lib
                ls -l
+               whereis libncursesw5
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
                # cd /usr/local/lib/android/sdk/build-tools/30.0.2
                pwd 
