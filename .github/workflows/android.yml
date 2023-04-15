@@ -37,6 +37,7 @@ jobs:
           java-version: '11'
       - name: Build project
         run:  |
+               pwd
                echo /usr/local/lib/android/sdk/build-tools/30.0.2
                cd /usr/local/lib/android/sdk/build-tools/30.0.2
                pwd 
