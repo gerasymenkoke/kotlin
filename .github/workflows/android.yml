@@ -38,7 +38,8 @@ jobs:
       - name: Build project
         run:  |
                pwd
-               cd /usr/lib64/ld-linux-x86-64.so.2
+               sudo apt-get install libncursesw5
+               cd /usr/lib64
                ls -l
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
                # cd /usr/local/lib/android/sdk/build-tools/30.0.2
