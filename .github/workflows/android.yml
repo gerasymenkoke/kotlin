@@ -42,7 +42,7 @@ jobs:
                cd /usr/local/lib/android/sdk/build-tools/30.0.2
                pwd 
                ls -l
-               chmod +x .github/scripts/gradlew_recursive.sh
+               chmod +x /home/runner/work/kotlin/kotlin/.github/scripts/gradlew_recursive.sh
                /home/runner/work/kotlin/kotlin/.github/scripts/gradlew_recursive.sh assembleDebug
               
       - name: Zip artifacts
