@@ -43,8 +43,7 @@ jobs:
                dpkg -L libncurses5
                
                
-               # echo /usr/local/lib/android/sdk/build-tools/30.0.2
-               # cd /usr/local/lib/android/sdk/build-tools/30.0.2
+               
                
                chmod +x /home/runner/work/kotlin/kotlin/.github/scripts/gradlew_recursive.sh
                cd /home/runner/work/kotlin/kotlin/
