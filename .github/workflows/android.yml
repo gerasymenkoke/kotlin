@@ -41,6 +41,7 @@ jobs:
                sudo apt-get install libncursesw5
                echo whereis libncursesw5
                whereis libncursesw5
+               cd /home/runner/work/kotlin/kotlin/
                pwd 
                ls -l
                # echo /usr/local/lib/android/sdk/build-tools/30.0.2
