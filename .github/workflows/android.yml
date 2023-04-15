@@ -37,8 +37,8 @@ jobs:
           java-version: '11'
       - name: Build project
         run:  |
-               echo /usr/local/lib/android/sdk/build-tools/30.0.2/llvm-rs-cc
-               cd /usr/local/lib/android/sdk/build-tools/30.0.2/llvm-rs-cc
+               echo /usr/local/lib/android/sdk/build-tools/30.0.2
+               cd /usr/local/lib/android/sdk/build-tools/30.0.2
                ls -l
                chmod +x .github/scripts/gradlew_recursive.sh
                .github/scripts/gradlew_recursive.sh assembleDebug
