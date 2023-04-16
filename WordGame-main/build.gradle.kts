@@ -139,9 +139,9 @@ android {
         create("release") {
           storeFile = signingProperties["signingStoreLocation"] as? File
  
-            storePassword = signingProperties["signingStorePassword"] as String
-            keyAlias = signingProperties["signingKeyAlias"] as String
-            keyPassword = signingProperties["signingKeyPassword"]   as String     }
+            storePassword = signingProperties["signingStorePassword"] as? String
+            keyAlias = signingProperties["signingKeyAlias"] as? String
+            keyPassword = signingProperties["signingKeyPassword"]   as? String     }
     }
 
     buildTypes {
