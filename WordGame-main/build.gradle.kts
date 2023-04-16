@@ -138,7 +138,7 @@ android {
     signingConfigs {
         create("release") {
             storeFile =
-                if (signingPropertiesExist) file(signingProperties["signingStoreLocation"] as String)
+                if (signingPropertiesExist) file(signingProperties["signingStoreLocation"] as String) else null
             storePassword = file(signingProperties["signingStorePassword"] as String)
             keyAlias = file(signingProperties["signingKeyAlias"] as String)
             keyPassword = file(signingProperties["signingKeyPassword"] as String)
